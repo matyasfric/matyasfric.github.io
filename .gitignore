@@ -1,0 +1,27 @@
+# Citlivé soubory (např. konfigurace a klíče)
+.env
+*.env
+*.pem
+*.key
+*.crt
+secrets*
+passwords*
+
+# Soubory operačního systému a editorů
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Zbytečné adresáře a závislosti
+node_modules/
+bower_components/
+vendor/
+dist/
+build/
+tmp/
+
+# Logy a databáze
+*.log
+*.sql
+*.sqlite3
