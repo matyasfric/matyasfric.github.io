@@ -1,0 +1,118 @@
+baseURL: "https://matyasfric.github.io/"
+languageCode: "cs"
+title: "Osobní web"
+theme: "papermodx"
+pagination.pagerSize: 10
+enableRobotsTXT: true
+enableGitInfo: true
+canonifyURLs: true
+
+params:
+  socialIcons:
+    - name: github-simple
+      url: "https://github.com/matyasfric"
+    - name: linkedin-simple
+      url: "https://www.linkedin.com/in/matyasfric/"
+  favicon: "images/favicon.ico"
+  author: "Matyáš F."
+  description: "osobní webová stránka"
+  keywords:
+  - "Matyáš Fric"
+  - "Matyas Fric"
+  - "Github"
+  - "Linkedin"
+  - "technologie"
+  - "informační technologie"
+  - "IT"
+  - "programování"
+  - "software"
+  - "web"
+  - "osobní web"
+  - "blog"
+  - "portfolio"
+  - "data science"
+  - "data"
+  - "analýza dat"
+  - "cybersecurity"
+  - "kybernetická bezpečnost"
+  - "AI"
+  - "umělá inteligence"
+  - "machine learning"
+  - "strojové učení"
+  copyright: "© 2025 Matyas F."
+  themeColor: "#4a90e2"
+  dateFormat: "02.01.2006"
+  showReadingTime: true
+  showLastMod: true
+  env: "production"
+  imageUrl: "images/avatar.jpg"
+  profileMode:
+    enabled: true
+    title: "Matyáš F."
+    subtitle: "osobní web"
+    imageUrl: "images/avatar.jpg"
+    imageTitle: "Moje fotka"
+    buttons:
+      - name: "Portfolio"
+        url: "/portfolio"
+      - name: "O mně"
+        url: "/about"
+  mainSections:
+    - posts
+
+
+menu:
+  main:
+    - identifier: "home"
+      name: "Domů"
+      url: "/"
+      weight: 1
+    # - identifier: "blog"
+    #   name: "Blog"
+    #   url: "/posts/"
+    #   weight: 2
+    - identifier: "about"
+      name: "O mně"
+      url: "/about/"
+      weight: 3
+    # - identifier: "portfolio"
+    #   name: "Portfolio"
+    #   url: "/portfolio/"
+    #   weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - Sitemap
+
+markup:
+  highlight:
+    noClasses: false
+    style: "monokai"
+    guessSyntax: true
+  goldmark:
+    renderer:
+      unsafe: false  # Zakáže raw HTML v markdownu
+    extensions:
+      typographer: true
+      linkify: true
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: true
+    useSessionStorage: true
+  youtube:
+    privacyEnhanced: true
+  x:
+    enableDNT: true
+    simple: true
+    disableInlineCSS: true
+
+languages:
+  cs:
+    languageName: "Čeština"
+    weight: 1
