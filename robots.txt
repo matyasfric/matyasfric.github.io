@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://matyasfric.github.io/sitemap.xml
